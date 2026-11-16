@@ -653,7 +653,7 @@ form[action="https://httpbin.org/post"] :is(input, textarea):required:user-inval
   background-size: 0.85em, 100% 100%;
 }
 
-/* form messages - error area, filled by js/form.js */
+/* form messages - error area, filled by form.js */
 #error-area:not(:empty) {
   margin: 1.5rem 0 0;
   padding: 0.9rem 1.1rem;
