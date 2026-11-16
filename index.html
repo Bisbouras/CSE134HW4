@@ -9,6 +9,7 @@
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=Archivo+Expanded:wght@600;700&amp;display=swap">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js"></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,8 +42,15 @@
         </li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="form-with-js.html">Contact</a>
+          <ul>
+            <li><a href="form-with-js.html">Contact form, with JavaScript</a></li>
+            <li><a href="form-no-js.html">Contact form, no JavaScript</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
+    <button type="button" id="theme-toggle" hidden>Light theme</button>
   </header>
 
   <main>
@@ -54,7 +62,7 @@
       </p>
       <picture>
         <source srcset="images/bisbo-logo.webp" type="image/webp">
-        <img src="images/bisbo-logo.jpg" width="240" height="240" alt="Bisbo logo: a stylised blue wolf head above the word BISBO.">
+        <img src="images/bisbo-logo.jpg" width="240" height="240" alt="Bisbo logo: a stylised wolf head above the word BISBO.">
       </picture>
       <p>
         Hey, I'm Chris, or <i>Bisbo</i>. I'm a game dev from Athens, Greece, finishing my CS degree at
@@ -107,7 +115,7 @@
 
     <hello-world></hello-world>
     <noscript>
-      <p>JavaScript is off. Nothing on this site depends on it; you only miss a "Hello World!" message in the developer console.</p>
+      <p>JavaScript is off. Everything here still works; you only miss the light theme switch and a "Hello World!" message in the developer console.</p>
     </noscript>
   </main>
 
@@ -120,7 +128,7 @@
         <li><a href="docs/cv.pdf">CV (PDF)</a></li>
       </ul>
     </address>
-    <p><small>&copy; 2026 Christos-Iason Enotiadis. Semantic HTML and CSS, CSE 134B Homework 3.</small></p>
+    <p><small>&copy; 2026 Christos-Iason Enotiadis. HTML, CSS and a little JavaScript, CSE 134B Homework 4.</small></p>
   </footer>
 </body>
 </html>

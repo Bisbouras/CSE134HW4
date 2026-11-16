@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Christos Enotiadis about gameplay and game design roles, playtests, or anything games. This version of the form works without JavaScript.">
+  <meta name="author" content="Christos-Iason Enotiadis">
+  <title>Contact (no JavaScript) | Christos Enotiadis</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=Archivo+Expanded:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <p><a href="index.html"><b>Christos Enotiadis</b></a></p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#work-heading">Work</a>
+          <ul>
+            <li><a href="killstreak.html">KILLSTREAK</a></li>
+            <li><a href="vpt.html">Volumetric Path Tracing</a></li>
+            <li><a href="poker.html">Poker Engine</a></li>
+          </ul>
+        </li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form-with-js.html">Contact</a>
+          <ul>
+            <li><a href="form-with-js.html">Contact form, with JavaScript</a></li>
+            <li><a href="form-no-js.html" aria-current="page">Contact form, no JavaScript</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Get in touch</h1>
+    <p>
+      Hiring for a gameplay or design role, up for a KILLSTREAK playtest, or just want to talk games?
+      Send me a message and I'll reply by email.
+    </p>
+    <p>
+      This version of the form uses only HTML and CSS, so it works with JavaScript turned off.
+      The <a href="form-with-js.html">enhanced version</a> adds detailed error messages and a character count.
+    </p>
+
+    <form action="https://httpbin.org/post" method="post">
+      <p>Fields marked with an asterisk (*) are required.</p>
+
+      <div>
+        <label for="name">Name <span aria-hidden="true">*</span></label>
+        <p id="name-hint">Up to 100 characters.</p>
+        <input type="text" id="name" name="name" autocomplete="name" required minlength="1" maxlength="100" aria-describedby="name-hint">
+      </div>
+
+      <div>
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <p id="email-hint">Where I'll reply, for example name@example.com.</p>
+        <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+      </div>
+
+      <div>
+        <label for="comments">Message <span aria-hidden="true">*</span></label>
+        <p id="comments-hint">Between 10 and 1,000 characters.</p>
+        <textarea id="comments" name="comments" rows="6" required minlength="10" maxlength="1000" aria-describedby="comments-hint"></textarea>
+      </div>
+
+      <input type="hidden" name="possible_bot" value="true">
+
+      <button type="submit">Send message</button>
+    </form>
+  </main>
+
+  <footer>
+    <address>
+      <ul>
+        <li><a href="mailto:cenotiadis@ucsd.edu">Email</a></li>
+        <li><a href="https://github.com/Bisbouras">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/christos-enotiadis">LinkedIn</a></li>
+        <li><a href="docs/cv.pdf">CV (PDF)</a></li>
+      </ul>
+    </address>
+    <p><small>&copy; 2026 Christos-Iason Enotiadis. HTML, CSS and a little JavaScript, CSE 134B Homework 4.</small></p>
+  </footer>
+</body>
+</html>
